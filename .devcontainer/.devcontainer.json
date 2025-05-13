@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  //"workspaceFolder": "/home/",
+  //"image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {}
+  },
+  "onCreateCommand": "sudo chsh -s /usr/bin/zsh $USER",
+  "postCreateCommand": "git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/usr/bin/zsh"
+      }
+    }
+  }
+}
