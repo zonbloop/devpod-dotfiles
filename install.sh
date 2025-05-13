@@ -37,5 +37,6 @@ cp "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
 # Install Starship prompt
 echo "Installing Starship prompt..."
 curl -sS https://starship.rs/install.sh | sh -s -- -y
+eval "$(starship init zsh)"
 
 echo "Installation complete. You can now start tmux and your configuration will be loaded."
