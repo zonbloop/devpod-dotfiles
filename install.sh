@@ -33,4 +33,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Copying tmux.conf from $SCRIPT_DIR to ~/.tmux.conf"
 cp "$SCRIPT_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
+# Install Starship prompt
+echo "Installing Starship prompt..."
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
 echo "Installation complete. You can now start tmux and your configuration will be loaded."
