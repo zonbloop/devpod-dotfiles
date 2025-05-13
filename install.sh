@@ -31,6 +31,6 @@ fi
 # Assuming tmux.conf is in the same directory as install.sh.
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Copying tmux.conf from $SCRIPT_DIR to ~/.tmux.conf"
-cp "$SCRIPT_DIR/tmux.conf" "$HOME/.tmux.conf"
+cp "$SCRIPT_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
 echo "Installation complete. You can now start tmux and your configuration will be loaded."
