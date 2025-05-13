@@ -32,6 +32,7 @@ fi
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Copying tmux.conf from $SCRIPT_DIR to ~/.tmux.conf"
 cp "$SCRIPT_DIR/.tmux.conf" "$HOME/.tmux.conf"
+cp "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
 
 # Install Starship prompt
 echo "Installing Starship prompt..."
